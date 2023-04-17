@@ -36,14 +36,29 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    border-radius: 5px;
     font-size: 20px;
     font-family: 'Open Sans';
     color: #F8F8F8;
     transition: background .4s;
     text-decoration: none;
-    
 }
+
+/* Efeito quando passa o ponteiro do mouse por cima */
+.navbar:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Open Sans';
+    color: #F8F8F8;
+    background-color: #0e303e;
+    transition: background .4s;
+    text-decoration: none;
+}   
 
 .div-middle{
     display: flex;
@@ -174,7 +189,6 @@ aside{
     flex-direction: row;
     align-items: center;
     text-align: center;
-    /* width: 100%; */
 }
 
 h1{
@@ -215,7 +229,6 @@ h1{
 }
 
 .form-button{
-    /* position: absolute; */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -328,10 +341,9 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #F8F8F8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
-/* 
+/* input interativo */
 .container{
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -339,20 +351,64 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .inputBox{
     position: relative;
-    width: 350px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 .inputBox input{
     position: relative;
     padding: 8px 10px;
+    width: 100%;
     border: none;
     outline: none;
-    background: #333;
-    color: #fff;
+    background: transparent;
+    color: black;
     font-size: 1.25em;
     letter-spacing: 0.05em;
-}  */
+    z-index: 2;
+} 
 
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.5s;
+    color: #333;
+    letter-spacing: 0.05em;
+} 
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    font-size: 0.85em;
+    transform: translateY(-32px);
+}
+
+.inputBox i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #164C64;
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+/* .inputBox input:valid ~ i,  */
+.inputBox input:focus ~ i {
+    height: 100%;
+    box-shadow: inset 0 0 1px 0;
+}
+
+
+
+/* FIM DO INPUT INTERATIVO */
 .video{
     display: flex;
     flex-direction: column;

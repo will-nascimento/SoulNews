@@ -13,7 +13,6 @@ nav{
     background: #164C64;
 }
 
-
 #Banner{
     height: 50%;
     width: 70%;
@@ -21,8 +20,6 @@ nav{
     margin-right: auto;
     padding-top: 2%;
 }
-
-
 
 .navbar-group{
     height: 20%;
@@ -43,7 +40,7 @@ nav{
     transition: background .4s;
     text-decoration: none;
 }
-
+/* Efeito quando passa o ponteiro do mouse por cima */
 .navbar:hover{
     display: flex;
     justify-content: center;
@@ -56,7 +53,7 @@ nav{
     background-color: #0e303e;
     transition: background .4s;
     text-decoration: none;
-}
+}   
 
 .div-middle{
     display: flex;
@@ -84,96 +81,6 @@ nav{
     border-radius: 5px;
     padding-left: 0%;
 }
-
-@media (max-width: 840px) {
-    .div-middle-left {
-        flex-direction: column;
-    }
-
-    .famosos{
-        width: 50%;
-    }
-
-    .filmes{
-        width: 50%;
-    }
-
-    .series{
-        width: 50%;
-    }
-
-    .a_img{
-        display: flex;
-        justify-content: center;
-    }
-  }
-
-@media (max-width: 640px) {
-    .famosos{
-        width: 50%;
-    }
-
-    .filmes{
-        width: 50%;
-    }
-
-    .series{
-        width: 50%;
-    }
-
-    .a_img{
-        display: flex;
-        justify-content: center;
-    }
-  }
-
-@media (max-width: 440px) {
-    .div-middle{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .div-middle-left {
-        width: 100%;
-        padding: 2%;
-    }
-
-    .famosos{
-        width: 70%;
-    }
-
-    .filmes{
-        width: 50%;
-    }
-
-    .series{
-        width: 50%;
-    }
-
-    .a_img{
-        display: flex;
-        justify-content: center;
-    }
-
-    .div-middle-right {
-        width: 100%;
-    }
-
-    aside{
-        margin: 2%;
-
-    }
-
-    .aside-section{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .aside-img{
-        padding: 10%;
-    }
-  }
 
 .filmes{
     width: 100%;
@@ -259,12 +166,6 @@ aside{
     font-size: 26px;
     line-height: 35px;
     color: #FFFFFF;
-    /* position: absolute;
-    width: 410px;
-    height: 70px;
-    left: 603px;
-    top: 668px; */
-
 } 
 
 .footer{
@@ -322,3 +223,99 @@ aside{
 .footer_img_right{
     width: 100%;
 }
+
+/* INÍCIO DA RESPONSIVIDADE */
+@media (max-width: 840px) {
+    .div-middle-left {
+        flex-direction: column;
+    }
+
+    .famosos{
+        width: 50%;
+    }
+
+    .filmes{
+        width: 50%;
+    }
+
+    .series{
+        width: 50%;
+    }
+
+    .a_img{
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+@media (max-width: 640px) {
+    .famosos{
+        width: 70%;
+    }
+
+    .filmes{
+        width: 70%;
+    }
+
+    .series{
+        width: 70%;
+    }
+  }
+
+@media (max-width: 440px) {
+    .div-middle{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .div-middle-left {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .famosos{
+        width: 70%;
+    }
+
+    .filmes{
+        width: 70%;
+    }
+
+    .series{
+        width: 70%;
+    }
+
+    .a_img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div-middle-right {
+        display: flex;
+        width: 100%;
+    }
+
+    aside{
+        margin: 2%;
+        width: 100%;
+        display: flex;
+    }
+
+    .aside-section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aside-img{
+        display: flex;
+        padding: 10%;
+        justify-content: center;
+        margin: 10%;
+    }
+
+    .aside-text{
+        display: none;
+    }
+  }

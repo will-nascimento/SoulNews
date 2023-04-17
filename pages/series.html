@@ -44,16 +44,33 @@
                 <span class="close">&times;</span>
                 <h2 class="modal_title">Formulário de Contato</h2>
                 <form class="modal_form">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome">
-                    <label for="sobrenome">Sobrenome:</label>
-                    <input type="text" id="sobrenome" name="sobrenome">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="nascimento">Data de Nascimento:</label>
-                    <input type="date" id="nascimento" name="nascimento">
-                    <label for="telefone">Telefone:</label>
-                    <input type="number" id="telefone" name="telefone">
+                    <div class="container">
+                        <div class="inputBox">
+                            <input type="text" id="nome" name="nome" required>
+                            <span for="nome">Nome:</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" id="sobrenome" name="sobrenome">
+                            <span for="sobrenome">Sobrenome:</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" id="email" name="email" required>
+                            <span for="email">E-mail:</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="date" id="nascimento" name="nascimento">
+                            <span for="nascimento">Data de Nascimento:</span>
+                            <i></i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" id="telefone" name="telefone">
+                            <span for="telefone">Telefone:</span>
+                            <i></i>
+                        </div>
+                    </div>
                     <label for="conteudo">Qual conteudo mais te interessa?</label>
                     <Span class="modal_span">
                         <input type="checkbox" id="conteudo" name="conteudo">
@@ -98,14 +115,14 @@
             </span>
 
             <span class="footer-middle">
-                <a href=""><img class="footer_img_middle" src="../imagem/IconLinkedin.png" alt=""></a>
-                <a href=""><img class="footer_img_middle" src="../imagem/IconInsta.png" alt=""></a>
-                <a href=""><img class="footer_img_middle" src="../imagem/IconFace.png" alt=""></a>
-                <a href=""><img class="footer_img_middle" src="../imagem/IconTwitter.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img class="footer_img_middle" src="../imagem/IconLinkedin.png" alt=""></a>
+                <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img class="footer_img_middle" src="../imagem/IconInsta.png" alt=""></a>
+                <a href="https://pt-br.facebook.com/SoulCodeAcademy/" target="_blank"><img class="footer_img_middle" src="../imagem/IconFace.png" alt=""></a>
+                <a href="https://twitter.com/SoulCodeAcademy" target="_blank"><img class="footer_img_middle" src="../imagem/IconTwitter.png" alt=""></a>
             </span>
 
             <span class="footer-span-right">
-                <a class="footer-right" href="https://soulcode.com/"><img class="footer_img_right" src="imagem/soulcode.png" alt=""></a>
+                <a class="footer-right" href="https://soulcode.com/" target="_blank"><img class="footer_img_right" src="../imagem/soulcode.png" alt=""></a>
             </span>
         </div>
     </footer>
