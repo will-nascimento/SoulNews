@@ -1,0 +1,222 @@
+/*PAGE FAMOSOS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 35%;
+    background: #164C64;
+}
+
+
+#Banner{
+    height: 50%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+
+
+
+.navbar-group{
+    height: 20%;
+    display: flex;
+    width: 100%;
+    margin: 2% ;
+    flex-direction: row;
+
+}
+
+.navbar{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: #F8F8F8;
+    transition: background .4s;
+    text-decoration: none;
+   
+    
+}
+
+.h2-filme{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #164C64;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.form-button{
+    position: absolute;
+    width: 300px;
+    height: 68px;
+    left: 45%;
+    top: 48%;
+
+}
+
+.btn{
+    display: flex;
+    z-index: 1;
+    display: block;
+    width: 180px;
+    height: 52px;
+    background: #FF8A76;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    
+}
+
+.div-filme{
+    display: flex;
+    width: 100%;    
+}
+
+#h1-filme{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    position: absolute;
+    padding-left: 25%;
+    padding-top: 6%;
+}
+
+#p-filme{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.img-filme{
+    width: 100%;
+    padding-top: 10%;
+   padding-left: 8%;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
+    margin: 1%;
+}
+
+.h3-famosos{
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 1%;
+    margin-top: 5%;
+    /* line-height: 27px; */
+    color: #164C64;
+    /* position: absolute; */
+    text-align: center;
+    /* left: 42%; */
+    /* top: 134%; */
+}
+
+.video-span{
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    /* top: 846px; */
+    background: #164C64;
+    /* justify-content: space-between; */
+    align-items: center ;
+}
+
+.footer-span-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .footer-span-left{
+    /* padding-left: 20%; */
+
+
+/* .footer-left{
+} */
+
+.footer-middle{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    padding-right: 10%;
+}
+
+.footer_img_middle {
+    width: 100%;
+}
+
+.footer_img_left{
+    width: 100%;
+    /* padding-left: 100%; */
+}
+
+.footer_img_right{
+    width: 100%;
+    /* padding-right: 1%; */
+}
+
+    
+ 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="pages.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img id="Banner" src="../imagem/Painel_Principal.png" alt="">
+                <ul class="navbar-group">
+                    <a class="navbar" href="../home.html">Home</a>
+                    <a class="navbar" href="famosos.html">Famosos</a>
+                    <a class="navbar" href="filmes.html">Filmes</a>
+                    <a class="navbar" href="series.html">Séries</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="div-famosos">
+            <img class="img-famosos" src="../imagem/Serie.png" alt="Imagem de Harry Styles e uma loira muito gata.">
+            <section>
+            <h1>Lea Michele se pronuncia sobre rumores de que é analfabeta</h1>
+            <p id="p-famosos">"Eu ia para o Glee todo dia, eu sabia minhas falas todos os dias. E aí surge esse rumor online de que 
+                eu não sei ler ou escrever? É triste. É realmente triste. Eu sempre penso que, se eu fosse um homem, muito disso não
+                 aconteceria", comentou. </br>
+            </br>
+            No mesmo dia, depois da entrevista ser publicada, ela fez um tuíte em branco, como um tipo de brincadeira para os haters.
+             As pessoas se divertiram com o post e um usuário comentou, "a coisa menos problemática que ela já disse.
+            </p>
+            </section>
+        </div>
+        <div class="form-button">
+            <button Id="btn" class="btn">Clique Aqui!</button>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="modal_title">Formulário de Contato</h2>
+                <form class="modal_form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" id="telefone" name="telefone">
+                    <label for="conteudo">Qual conteudo mais te interessa?</label>
+                    <Span class="modal_span">
+                        <input type="checkbox" id="conteudo" name="conteudo">
+                        <label for="conteudo">Famosos</label>
+                        <input type="checkbox" id="conteudo" name="conteudo">
+                        <label for="conteudo">Filmes</label>
+                        <input type="checkbox" id="conteudo" name="conteudo">
+                        <label for="conteudo">Series</label>
+                    </Span>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                    <Span class="modal_span">
+                        <input class="termos" type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Concordo com os termos de uso</label>
+                    </Span>
+                    <Span class="modal_span">
+                        <input type="checkbox" id="marketing" name="marketing">
+                        <label for="marketing">Aceito o envio de emails</label>
+                    </Span>
+                    <Span class="modal_span_btn">
+
+                        <input class="form_btn_inside" type="submit" value="Enviar" onclick="exibirAlerta()">
+                    </Span>
+
+                </form>
+            </div>
+        </div>
+        <div class="video">
+            <h3 class="h3-famosos">Assista ao vídeo completo!</h3>
+            <span class="video-span">
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/55dzvYVpSg8" title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </span>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <span class="footer-span-left">
+                <a class="footer-left" href=""><img class="footer_img_left " src="../imagem/Soul_News.png" alt=""></a>
+            </span>
+
+            <span class="footer-middle">
+                <a href=""><img class="footer_img_middle" src="../imagem/IconLinkedin.png" alt=""></a>
+                <a href=""><img class="footer_img_middle" src="../imagem/IconInsta.png" alt=""></a>
+                <a href=""><img class="footer_img_middle" src="../imagem/IconFace.png" alt=""></a>
+                <a href=""><img class="footer_img_middle" src="../imagem/IconTwitter.png" alt=""></a>
+            </span>
+
+            <span class="footer-span-right">
+                <a class="footer-right" href=""><img class="footer_img_right" src="../imagem/soulcode.png" alt=""></a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script src="app.js"></script>
+
