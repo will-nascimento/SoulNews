@@ -35,13 +35,27 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    border-radius: 5px;
     font-size: 20px;
     font-family: 'Open Sans';
     color: #F8F8F8;
     transition: background .4s;
     text-decoration: none;
-    
+}
+
+.navbar:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Open Sans';
+    color: #F8F8F8;
+    background-color: #0e303e;
+    transition: background .4s;
+    text-decoration: none;
 }
 
 .div-middle{
